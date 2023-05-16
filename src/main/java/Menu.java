@@ -12,17 +12,15 @@ public class Menu {
                 break;
             case 2:
                 QuadraticEquations quadratic = new QuadraticEquations();
-                System.out.println("Введите коэффициент a:");
-                Scanner console = new Scanner(System.in);
-                double a = console.nextDouble();
-                System.out.println("Введите коэффициент b:");
-                double b = console.nextDouble();
-                System.out.println("Введите коэффициент c:");
-                double c = console.nextDouble();
-                quadratic.calculateRoots(a, b, c);
+                quadratic.calculateRoots();
+                break;
+            case 3:
+                BiggestNumber biggestNumber = new BiggestNumber();
+                biggestNumber.calculateBiggestNum();
                 break;
             default:
                 System.out.println("Такого упражнения нет");
+                break;
         }
     }
 
@@ -31,5 +29,7 @@ public class Menu {
         System.out.println("Напишите программу на Java, чтобы получить число от пользователя, и распечатайте, является ли оно положительным или отрицательным.");
         System.out.println("\n#2:");
         System.out.println("Напишите программу на Java для решения квадратных уравнений");
+        System.out.println("\n#3:");
+        System.out.println("Возьмите три цифры у пользователя и напечатайте наибольшее число.");
     }
 }

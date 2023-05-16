@@ -6,9 +6,9 @@ public class Run {
     public static void main(String[] args) {
         Menu menu = new Menu();
         menu.printMenu();
-        Scanner console = new Scanner(System.in);
         boolean isExit = false;
         while (!isExit){
+            Scanner console = new Scanner(System.in);
             System.out.println("\n\n!!!! Выберите номер меню. Для выхода введите exit");
             String input = console.nextLine();
             isExit = input.equals("exit");

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class QuadraticEquations {
     double a;
     double b;
@@ -6,11 +8,16 @@ public class QuadraticEquations {
     double x2; // root 2
     double D; // discriminant
 
-    public void calculateRoots(double a, double b, double c){
+    public void calculateRoots(){
         // ax^2 + bx + c = 0
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        Scanner console = new Scanner(System.in);
+        System.out.print("Введите коэффициент a: ");
+        double a = console.nextDouble();
+        System.out.print("\nВведите коэффициент b: ");
+        double b = console.nextDouble();
+        System.out.print("\nВведите коэффициент c: ");
+        double c = console.nextDouble();
+        System.out.println();
 
         // D = b^2 -4ac
         D = Math.pow(b,2) - 4*a*c;
