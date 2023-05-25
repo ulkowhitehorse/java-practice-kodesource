@@ -4,9 +4,8 @@ import java.util.Scanner;
 public class Menu {
     final String exit = "exit";
 
-    public void chooseMenu(int number){
-        switch (number)
-        {
+    public void chooseMenu(int number) {
+        switch (number) {
             case 1:
                 Conditions conditions = new Conditions();
                 conditions.NegativeNumbers();
@@ -31,13 +30,17 @@ public class Menu {
                 NumbersEquality numbersEquality = new NumbersEquality();
                 numbersEquality.defineEquality();
                 break;
+            case 7:
+                NumberOfDays numberOfDays = new NumberOfDays();
+                numberOfDays.calculateDaysInMonth();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
         }
     }
 
-    public void printMenu(){
+    public void printMenu() {
         System.out.println("#1:");
         System.out.println("Напишите программу на Java, чтобы получить число от пользователя, и распечатайте, является ли оно положительным или отрицательным.");
         System.out.println("\n#2:");
@@ -50,6 +53,8 @@ public class Menu {
         System.out.println("Напишите программу на Java, которая хранит число от пользователя и генерирует целое число от 1 до 7 и отображает название дня недели.");
         System.out.println("\n#6:");
         System.out.println("Напишите программу на Java, которая считывает два числа с плавающей запятой и проверяет, совпадают ли они с точностью до трех десятичных знаков. ");
+        System.out.println("\n#7:");
+        System.out.println("Напишите программу на Java, чтобы узнать количество дней в месяце. ");
 
     }
 }
