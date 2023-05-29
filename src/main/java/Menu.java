@@ -34,6 +34,10 @@ public class Menu {
                 NumberOfDays numberOfDays = new NumberOfDays();
                 numberOfDays.calculateDaysInMonth();
                 break;
+            case 8:
+                VowelConsonantSound vowelConsonantSound = new VowelConsonantSound();
+                vowelConsonantSound.checkSound();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -55,6 +59,7 @@ public class Menu {
         System.out.println("Напишите программу на Java, которая считывает два числа с плавающей запятой и проверяет, совпадают ли они с точностью до трех десятичных знаков. ");
         System.out.println("\n#7:");
         System.out.println("Напишите программу на Java, чтобы узнать количество дней в месяце. ");
-
+        System.out.println("\n#8:");
+        System.out.println("Напишите программу на Java, в которой пользователю нужно предоставить один символ из алфавита. Печать гласного или согласного, в зависимости от ввода пользователя. Если пользовательский ввод не является буквой (между a и z или A и Z) или является строкой длиной> 1, выведите сообщение об ошибке.");
     }
 }
