@@ -38,6 +38,10 @@ public class Menu {
                 VowelConsonantSound vowelConsonantSound = new VowelConsonantSound();
                 vowelConsonantSound.checkSound();
                 break;
+            case 9:
+                LeapYear leapYear = new LeapYear();
+                leapYear.checkYear();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -61,5 +65,7 @@ public class Menu {
         System.out.println("Напишите программу на Java, чтобы узнать количество дней в месяце. ");
         System.out.println("\n#8:");
         System.out.println("Напишите программу на Java, в которой пользователю нужно предоставить один символ из алфавита. Печать гласного или согласного, в зависимости от ввода пользователя. Если пользовательский ввод не является буквой (между a и z или A и Z) или является строкой длиной> 1, выведите сообщение об ошибке.");
+        System.out.println("\n#9:");
+        System.out.println("Напишите программу на Java, от которой у пользователя уходит год, и напечатайте, является ли этот год високосным или нет.");
     }
 }
