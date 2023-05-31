@@ -1,8 +1,6 @@
-import java.util.Scanner;
 // http://www.kodesource.top/java-exercises/conditional-statement/index.php
 
 public class Menu {
-    final String exit = "exit";
 
     public void chooseMenu(int number) {
         switch (number) {
@@ -42,13 +40,36 @@ public class Menu {
                 LeapYear leapYear = new LeapYear();
                 leapYear.checkYear();
                 break;
+            case 10:
+                PositiveInteger positiveInteger = new PositiveInteger();
+                positiveInteger.printNumbers();
+                break;
+            case 11:
+                PositiveInteger positiveInteger1 = new PositiveInteger();
+                positiveInteger1.printNextIntegerAndSum();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
         }
     }
 
-    public void printMenu() {
+    public void printMenu(int page) {
+        switch (page) {
+            case 1:
+                print_1();
+                break;
+            case 2:
+                print_2();
+                break;
+            default:
+                System.out.println("Такой страницы нет");
+                break;
+        }
+
+    }
+
+    private void print_1(){
         System.out.println("#1:");
         System.out.println("Напишите программу на Java, чтобы получить число от пользователя, и распечатайте, является ли оно положительным или отрицательным.");
         System.out.println("\n#2:");
@@ -67,5 +88,13 @@ public class Menu {
         System.out.println("Напишите программу на Java, в которой пользователю нужно предоставить один символ из алфавита. Печать гласного или согласного, в зависимости от ввода пользователя. Если пользовательский ввод не является буквой (между a и z или A и Z) или является строкой длиной> 1, выведите сообщение об ошибке.");
         System.out.println("\n#9:");
         System.out.println("Напишите программу на Java, от которой у пользователя уходит год, и напечатайте, является ли этот год високосным или нет.");
+        System.out.println("\n#10");
+        System.out.println("Напишите программу на Java для отображения первых 10 натуральных чисел.");
+    }
+
+    private void print_2(){
+        System.out.println("#11:");
+        System.out.println("Напишите программу на Java для отображения n терминов натуральных чисел и их суммы.");
+
     }
 }
