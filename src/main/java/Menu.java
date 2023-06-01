@@ -48,6 +48,10 @@ public class Menu {
                 PositiveInteger positiveInteger1 = new PositiveInteger();
                 positiveInteger1.printNextIntegerAndSum();
                 break;
+            case 12:
+                Averages averages = new Averages();
+                averages.calculateAverage();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -95,6 +99,8 @@ public class Menu {
     private void print_2(){
         System.out.println("#11:");
         System.out.println("Напишите программу на Java для отображения n терминов натуральных чисел и их суммы.");
+        System.out.println("\n#12:");
+        System.out.println("Напишите программу на Java, чтобы ввести 5 цифр с клавиатуры и найти их сумму и среднее");
 
     }
 }
