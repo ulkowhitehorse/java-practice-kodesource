@@ -52,6 +52,10 @@ public class Menu {
                 Averages averages = new Averages();
                 averages.calculateAverage();
                 break;
+            case 13:
+                NumberOperations numberOperations = new NumberOperations();
+                numberOperations.calculateCube();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -101,6 +105,7 @@ public class Menu {
         System.out.println("Напишите программу на Java для отображения n терминов натуральных чисел и их суммы.");
         System.out.println("\n#12:");
         System.out.println("Напишите программу на Java, чтобы ввести 5 цифр с клавиатуры и найти их сумму и среднее");
-
+        System.out.println("\n13:");
+        System.out.println("Напишите программу на Java, чтобы отобразить куб числа до заданного целого числа.");
     }
 }
