@@ -1,3 +1,5 @@
+package Start;
+
 import java.util.Scanner;
 
 public class Run {
@@ -43,7 +45,7 @@ public class Run {
                 isPrev = false;
             }
 
-            if (input.matches("\\b([1-9]|1[0-3])\\b")) {
+            if (input.matches("\\b([1-9]|1[0-4])\\b")) {
                 int number = Integer.parseInt(input);
                 menu.chooseMenu(number);
             }

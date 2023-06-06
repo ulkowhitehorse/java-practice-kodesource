@@ -1,4 +1,6 @@
-// http://www.kodesource.top/java-exercises/conditional-statement/index.php
+package Start;// http://www.kodesource.top/java-exercises/conditional-statement/index.php
+
+import Exercises.*;
 
 public class Menu {
 
@@ -56,6 +58,10 @@ public class Menu {
                 NumberOperations numberOperations = new NumberOperations();
                 numberOperations.calculateCube();
                 break;
+            case 14:
+                MultiplicationTable table = new MultiplicationTable();
+                table.printMultiplicationTable();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -107,5 +113,7 @@ public class Menu {
         System.out.println("Напишите программу на Java, чтобы ввести 5 цифр с клавиатуры и найти их сумму и среднее");
         System.out.println("\n13:");
         System.out.println("Напишите программу на Java, чтобы отобразить куб числа до заданного целого числа.");
+        System.out.println("\n14:");
+        System.out.println("Напишите программу на Java для отображения таблицы умножения заданного целого числа.");
     }
 }

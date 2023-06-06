@@ -1,3 +1,5 @@
+package Exercises;
+
 import java.time.Month;
 import java.util.Scanner;
 
