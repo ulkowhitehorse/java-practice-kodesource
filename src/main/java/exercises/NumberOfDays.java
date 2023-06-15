@@ -1,4 +1,4 @@
-package Exercises;
+package exercises;
 
 import java.time.Month;
 import java.util.Scanner;

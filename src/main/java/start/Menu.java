@@ -1,6 +1,6 @@
-package Start;// http://www.kodesource.top/java-exercises/conditional-statement/index.php
+package start;// http://www.kodesource.top/java-exercises/conditional-statement/index.php
 
-import Exercises.*;
+import exercises.*;
 
 public class Menu {
 
@@ -66,6 +66,10 @@ public class Menu {
                 OddNaturalNumber oddNaturalNumber = new OddNaturalNumber();
                 oddNaturalNumber.printOddNumbers();
                 break;
+            case 16:
+                Triangle triangle = new Triangle();
+                triangle.printTriangle();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -121,5 +125,7 @@ public class Menu {
         System.out.println("Напишите программу на Java для отображения таблицы умножения заданного целого числа.");
         System.out.println("\n15:");
         System.out.println("Напишите программу на Java для отображения n терминов нечетного натурального числа и их суммы.");
+        System.out.println("\n16:");
+        System.out.println("Напишите программу на Java для отображения шаблона в виде прямоугольного треугольника с номером.");
     }
 }
