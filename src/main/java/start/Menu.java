@@ -68,7 +68,11 @@ public class Menu {
                 break;
             case 16:
                 Triangle triangle = new Triangle();
-                triangle.printTriangle();
+                triangle.printRightTriangleNumbersInOrder();
+                break;
+            case 17:
+                Triangle triangle1 = new Triangle();
+                triangle1.printRightTriangleNumbersInRow();
                 break;
             default:
                 System.out.println("Такого упражнения нет");
@@ -127,5 +131,7 @@ public class Menu {
         System.out.println("Напишите программу на Java для отображения n терминов нечетного натурального числа и их суммы.");
         System.out.println("\n16:");
         System.out.println("Напишите программу на Java для отображения шаблона в виде прямоугольного треугольника с номером.");
+        System.out.println("\n17:");
+        System.out.println("Напишите программу на Java для создания такого шаблона, как прямоугольный треугольник, с номером, который будет повторять число в ряду.");
     }
 }
