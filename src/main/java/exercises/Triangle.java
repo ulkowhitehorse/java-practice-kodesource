@@ -28,4 +28,18 @@ public class Triangle {
             System.out.println();
         }
     }
+
+    public void printRightTriangleNumbersInRowPlusOne(){
+        inputFromUser input = new inputFromUser();
+        int numberOfRows = input.inputInteger(textToUser);
+        int serialNumber = 1;
+
+        for (int i = 0; i <= numberOfRows; i++){
+            for (int j = 0; j <= i; j++){
+                System.out.print(serialNumber);
+                serialNumber++;
+            }
+            System.out.println();
+        }
+    }
 }

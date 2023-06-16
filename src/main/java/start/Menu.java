@@ -74,6 +74,10 @@ public class Menu {
                 Triangle triangle1 = new Triangle();
                 triangle1.printRightTriangleNumbersInRow();
                 break;
+            case 18:
+                Triangle triangle2 = new Triangle();
+                triangle2.printRightTriangleNumbersInRowPlusOne();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
                 break;
@@ -133,5 +137,7 @@ public class Menu {
         System.out.println("Напишите программу на Java для отображения шаблона в виде прямоугольного треугольника с номером.");
         System.out.println("\n17:");
         System.out.println("Напишите программу на Java для создания такого шаблона, как прямоугольный треугольник, с номером, который будет повторять число в ряду.");
+        System.out.println("\n18:");
+        System.out.println("Напишите программу на Java, чтобы сделать такой шаблон, как прямоугольный треугольник, с числом, увеличенным на 1");
     }
 }
