@@ -6,7 +6,7 @@ public class Triangle {
     private static final String textToUser = "Введите количество строк для треугольника";
 
     public void printRightTriangleNumbersInOrder(){
-        inputFromUser input = new inputFromUser();
+        InputFromUser input = new InputFromUser();
         int numberOfRows = input.inputInteger(textToUser);
 
         for (int i = 0; i <= numberOfRows; i++){
@@ -18,7 +18,7 @@ public class Triangle {
     }
 
     public void printRightTriangleNumbersInRow(){
-        inputFromUser input = new inputFromUser();
+        InputFromUser input = new InputFromUser();
         int numberOfRows = input.inputInteger(textToUser);
 
         for (int i = 1; i <= numberOfRows; i++){
@@ -30,7 +30,7 @@ public class Triangle {
     }
 
     public void printRightTriangleNumbersInRowPlusOne(){
-        inputFromUser input = new inputFromUser();
+        InputFromUser input = new InputFromUser();
         int numberOfRows = input.inputInteger(textToUser);
         int serialNumber = 1;
 

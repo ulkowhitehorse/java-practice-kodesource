@@ -82,6 +82,10 @@ public class Menu {
                 Pyramid pyramid = new Pyramid();
                 pyramid.printPyramid();
                 break;
+            case 20:
+                TriangleFloyd floyd = new TriangleFloyd();
+                floyd.printTriangle();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
         }
@@ -144,5 +148,7 @@ public class Menu {
         System.out.println("Напишите программу на Java, чтобы сделать такой шаблон, как прямоугольный треугольник, с числом, увеличенным на 1");
         System.out.println("\n19:");
         System.out.println("Напишите программу на Java, чтобы сделать такой шаблон, как пирамида, с числом, которое будет повторять число в той же строке.");
+        System.out.println("\n20:");
+        System.out.println(" Напишите программу на Java для печати треугольника Флойд");
     }
 }

@@ -1,6 +1,6 @@
 package exercises;
 
-import exercises.help.inputFromUser;
+import exercises.help.InputFromUser;
 
 public class Pyramid {
     public void setNumRows(int numRows) {
@@ -14,7 +14,7 @@ public class Pyramid {
     private int numRows;
 
     public void printPyramid(){
-        inputFromUser input = new inputFromUser();
+        InputFromUser input = new InputFromUser();
         numRows = input.inputInteger("Введите количество строк пирамиды");
 
         int numAllSymbols = numRows * 2 - 1; // all symbols in past row of pyramid

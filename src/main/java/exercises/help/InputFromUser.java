@@ -2,7 +2,7 @@ package exercises.help;
 
 import java.util.Scanner;
 
-public class inputFromUser {
+public class InputFromUser {
     public int inputInteger(String textToUser){
         System.out.print(textToUser + ": ");
         Scanner console = new Scanner(System.in);
