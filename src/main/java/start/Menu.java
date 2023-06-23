@@ -78,9 +78,12 @@ public class Menu {
                 Triangle triangle2 = new Triangle();
                 triangle2.printRightTriangleNumbersInRowPlusOne();
                 break;
+            case 19:
+                Pyramid pyramid = new Pyramid();
+                pyramid.printPyramid();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
-                break;
         }
     }
 
@@ -139,5 +142,7 @@ public class Menu {
         System.out.println("Напишите программу на Java для создания такого шаблона, как прямоугольный треугольник, с номером, который будет повторять число в ряду.");
         System.out.println("\n18:");
         System.out.println("Напишите программу на Java, чтобы сделать такой шаблон, как прямоугольный треугольник, с числом, увеличенным на 1");
+        System.out.println("\n19:");
+        System.out.println("Напишите программу на Java, чтобы сделать такой шаблон, как пирамида, с числом, которое будет повторять число в той же строке.");
     }
 }

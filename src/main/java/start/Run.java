@@ -45,7 +45,7 @@ public class Run {
                 isPrev = false;
             }
 
-            if (input.matches("\\b([1-9]|1[0-7=8])\\b")) {
+            if (input.matches("\\b([1-9]|1[0-9])\\b")) {
                 int number = Integer.parseInt(input);
                 menu.chooseMenu(number);
             }
