@@ -1,6 +1,7 @@
 package start;// http://www.kodesource.top/java-exercises/conditional-statement/index.php
 
 import exercises.*;
+import exercises.help.InputFromUser;
 
 public class Menu {
 
@@ -86,6 +87,10 @@ public class Menu {
                 TriangleFloyd floyd = new TriangleFloyd();
                 floyd.printTriangle();
                 break;
+            case 21:
+                Rhombus rhombus = new Rhombus(new InputFromUser().inputInteger("Введите количество рядов ромба:"));
+                rhombus.printRhombus();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
         }
@@ -98,6 +103,9 @@ public class Menu {
                 break;
             case 2:
                 print_2();
+                break;
+            case 3:
+                print_3();
                 break;
             default:
                 System.out.println("Такой страницы нет");
@@ -149,6 +157,11 @@ public class Menu {
         System.out.println("\n19:");
         System.out.println("Напишите программу на Java, чтобы сделать такой шаблон, как пирамида, с числом, которое будет повторять число в той же строке.");
         System.out.println("\n20:");
-        System.out.println(" Напишите программу на Java для печати треугольника Флойд");
+        System.out.println("Напишите программу на Java для печати треугольника Флойд");
+    }
+
+    public void print_3(){
+        System.out.println("\n21:");
+        System.out.println("Напишите программу на Java для отображения рисунка в виде ромба.");
     }
 }

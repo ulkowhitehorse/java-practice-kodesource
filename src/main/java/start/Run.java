@@ -11,7 +11,7 @@ public class Run {
         boolean isExit = false;
         boolean isNext = false;
         boolean isPrev = false;
-        final int lastPage = 2;
+        final int lastPage = 3;
         int pageMenu = 1;
         menu.printMenu(pageMenu);
 
