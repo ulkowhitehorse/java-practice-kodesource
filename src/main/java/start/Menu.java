@@ -91,6 +91,10 @@ public class Menu {
                 Rhombus rhombus = new Rhombus(new InputFromUser().inputInteger("Введите количество рядов ромба:"));
                 rhombus.printRhombus();
                 break;
+            case 29:
+                BigNumbers bigNumbers = new BigNumbers();
+                bigNumbers.calculateDigitsInNumber();
+                break;
             default:
                 System.out.println("Такого упражнения нет");
         }
@@ -163,5 +167,7 @@ public class Menu {
     public void print_3(){
         System.out.println("\n21:");
         System.out.println("Напишите программу на Java для отображения рисунка в виде ромба.");
+        System.out.println("\n29:");
+        System.out.println("Напишите программу на Java, которая читает положительное целое число и подсчитывает количество цифр, которое имеет число (менее десяти миллиардов).");
     }
 }
